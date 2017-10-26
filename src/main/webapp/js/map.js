@@ -14,7 +14,15 @@ AmCharts.makeChart( "mapdiv", {
    */
   "dataProvider": {
     "map": "GoianiaRegioes",
-    "getAreasFromMap": true
+    "areas" : [
+    	{"id" : "GO-CENTRAL"},
+    	{"id" : "GO-SUDESTE"},
+    	{"id" : "GO-NORTE"},
+    	{"id" : "GO-SUL"},
+    	{"id" : "GO-SUDOESTE"},
+    	{"id" : "GO-OESTE"},
+    	{"id" : "GO-NOROESTE"}
+    	]
   },
 
   /**
@@ -27,12 +35,3 @@ AmCharts.makeChart( "mapdiv", {
     "selectedColor": "#CC0000"
   },
 } );
-
-map.addListener("clickMapObject", function (event) {
-	  if (event.mapObject.id != undefined && chartData[event.mapObject.id] != undefined) {
-	    chart.dataProvider = chartData[event.mapObject.id];
-	    chart.clearLabels();
-	    chart.addLabel("0", "!20", event.mapObject.title, "center", 16);
-	    chart.validateData();
-	  }
-});
