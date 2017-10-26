@@ -26,5 +26,13 @@ AmCharts.makeChart( "mapdiv", {
     "autoZoom": true,
     "selectedColor": "#CC0000"
   },
-
 } );
+
+map.addListener("clickMapObject", function (event) {
+	  if (event.mapObject.id != undefined && chartData[event.mapObject.id] != undefined) {
+	    chart.dataProvider = chartData[event.mapObject.id];
+	    chart.clearLabels();
+	    chart.addLabel("0", "!20", event.mapObject.title, "center", 16);
+	    chart.validateData();
+	  }
+});
