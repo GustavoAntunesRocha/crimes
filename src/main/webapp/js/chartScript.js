@@ -21,3 +21,13 @@ var chartData = [ {
     "crimes": 984
   }
   ];
+
+AmCharts.makeChart( "chartdiv", {
+	  "type": "serial",
+	  "dataProvider": chartData,
+	  "categoryField": "country",
+	  "graphs": [ {
+		    "valueField": "crimes",
+		    "type": "column"
+	  } ]
+});

@@ -15,13 +15,13 @@ AmCharts.makeChart( "mapdiv", {
   "dataProvider": {
     "map": "GoianiaRegioes",
     "areas" : [
-    	{"id" : "GO-CENTRAL"},
-    	{"id" : "GO-SUDESTE"},
-    	{"id" : "GO-NORTE"},
-    	{"id" : "GO-SUL"},
-    	{"id" : "GO-SUDOESTE"},
-    	{"id" : "GO-OESTE"},
-    	{"id" : "GO-NOROESTE"}
+    	{"id" : "GO-CENTRAL", "selectable": true},
+    	{"id" : "GO-SUDESTE", "selectable": true},
+    	{"id" : "GO-NORTE", "selectable": true},
+    	{"id" : "GO-SUL", "selectable": true},
+    	{"id" : "GO-SUDOESTE", "selectable": true},
+    	{"id" : "GO-OESTE", "selectable": true},
+    	{"id" : "GO-NOROESTE", "selectable": true}
     	]
   },
 
@@ -31,7 +31,7 @@ AmCharts.makeChart( "mapdiv", {
    * selectedColor indicates color of the clicked area.
    */
   "areasSettings": {
-    "autoZoom": true,
+    
     "selectedColor": "#CC0000"
   },
 } );
