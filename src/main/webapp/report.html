@@ -6,26 +6,101 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
+		
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  			<a class="navbar-brand" href="#">Menu</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    			<div class="navbar-nav">
+      				<a class="nav-item nav-link" href="index.html">Página inicial <span class="sr-only">(current)</span></a>
+      				<a class="nav-item nav-link active" href="report.html">Reportar crime</a>
+      				<a class="nav-item nav-link" href="#">Pricing</a>
+      				<a class="nav-item nav-link disabled" href="#">Disabled</a>
+    			</div>
+  			</div>
+		</nav>
+				
 		<div class="container">
-			<form>
-			  <div class="form-group">
-			    <label for="exampleInputEmail1">Email address</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-			  </div>
-			  <div class="form-group">
-			    <label for="exampleInputPassword1">Password</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			  </div>
-			  <div class="form-check">
-			    <label class="form-check-label">
-			      <input type="checkbox" class="form-check-input">
-			      Check me out
-			    </label>
-			  </div>
-			  <button type="submit" class="btn btn-primary">Submit</button>
-			</form>
-		</div>
+			<div class="card">
+  				<div class="card-body">
+					<h2>Preencha o formulário abaixo!</h2>
+					<form>
+						<div class="form-row">
+					    	<div class="form-group col-md-6">
+					      		<label for="inputNome">Nome Completo</label>
+					      		<input type="text" class="form-control" id="inputNome" placeholder="Nome Completo" required="true">
+					    	</div>
+					    	<div class="form-group col-md-6">
+					      		<label for="inputCPF">CPF</label>
+					      		<input type="number" class="form-control" id="inputCPF" placeholder="CPF" required="true">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="inputAddress">Endereço residencial</label>
+					    	<input type="text" class="form-control" id="inputAddress" placeholder="Rua, número, bairro, cidade, estado" required="true">
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="inputEmail">E-mail</label>
+					    	<input type="email" class="form-control" id="inputEmail" placeholder="exemplo@exemplo.com" required="true">
+					  	</div>
+					  	<div class="form-row">
+					    	<div class="form-group col-md-6">
+					      		<label for="inputCidade">Cidade</label>
+					      		<input type="text" class="form-control" id="inputCidade" required="true">
+					    	</div>
+					    	<div class="form-group col-md-4">
+					      		<label for="inputEstado">Estado</label>
+					      		<select id="inputEstado" class="form-control" required="true">
+					        		<option selected>Acre</option>
+					        		<option>Alagoas</option>
+					        		<option>Amapá</option>
+					        		<option>Amazonas</option>
+					        		<option>Bahia</option>
+					        		<option>Ceará</option>
+					        		<option>Distrito Federal</option>
+					        		<option>Espírito Santo</option>
+					        		<option>Goiás</option>
+					        		<option>Maranhão</option>
+					        		<option>Mato Grosso</option>
+					        		<option>Mato Grosso do Sul</option>
+					        		<option>Minas Gerais</option>
+					        		<option>Pará</option>
+					        		<option>Paraíba</option>
+					        		<option>Paraná</option>
+					        		<option>Pernambuco</option>
+					        		<option>Piauí</option>
+					        		<option>Rio de Janeiro</option>
+					        		<option>Rio Grande do Norte</option>
+					        		<option>Rio Grande do Sul</option>
+					        		<option>Rondônia</option>
+					        		<option>Roraima</option>
+					        		<option>Santa Catarina</option>
+					        		<option>São Paulo</option>
+					        		<option>Sergipe</option>
+					        		<option>Tocantins</option>
+					      		</select>
+					    	</div>
+					    	<div class="form-group col-md-2">
+					      		<label for="inputCEP">CEP</label>
+					      		<input type="number" class="form-control" id="inputCEP" required="true">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+					    	<div class="form-check">
+					      		<label class="form-check-label">
+					        		<input class="form-check-input" type="checkbox"> Check me out
+					      		</label>
+					    	</div>
+					  	</div>
+					  	<button type="submit" class="btn btn-primary">Sign in</button>
+					</form>
+			  	</div>
+			</div>
+		</div>	
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	</body>
 </html>
