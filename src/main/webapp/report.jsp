@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@page import="java.util.ArrayList"%>
+<%@page import="jpa.Crime"%>
 <html>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<head>
@@ -30,8 +32,8 @@
 	  					<h2>Informações do crime:</h2>
 	  					<div class="form-row">
 	  						<div class="form-group col-md-4">
-	  							<label for="inputCrime">Tipo</label>
-	  							<select id="inputCrime" class="form-control" required="true">
+	  							<label for="inputTipo">Tipo</label>
+	  							<select id="inputTipo" class="form-control" required>
 	  								<option>Assalto</option>
 	  								<option>Assassinato</option>
 	  								<option>Furto</option>
@@ -40,7 +42,7 @@
 	  						</div>
 	  						<div class="form-group col-md-2">
 	  							<label for="inputArma">Arma</label>
-	  							<select id="inputArma" class="form-control" required="true">
+	  							<select id="inputArma" class="form-control" required>
 	  								<option>Nenhuma</option>
 	  								<option>Branca</option>
 	  								<option>Fogo</option>
@@ -61,7 +63,7 @@
 	  				</div>
 	  			</div>
 	  			<h1></h1>
-	  			<button type="submit" class="btn btn-primary">Enviar</button>
+	  			<button name="operacao" value="incluir" class="btn btn-primary">Enviar</button>
 	  		</div>
 		</form>
 		<script async defer
