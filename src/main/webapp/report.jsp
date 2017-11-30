@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <%@page import="java.util.ArrayList"%>
 <%@page import="jpa.Crime"%>
 <html>
@@ -8,7 +8,7 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<!-- Começo da navbar -->
+		<!-- ComeÃ§o da navbar -->
 		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   			<a class="navbar-brand" href="#">Menu</a>
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,20 +16,20 @@
   			</button>
   			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     			<div class="navbar-nav">
-      				<a class="nav-item nav-link" href="index.html">Página inicial <span class="sr-only">(current)</span></a>
+      				<a class="nav-item nav-link" href="index.html">PÃ¡gina inicial <span class="sr-only">(current)</span></a>
       				<a class="nav-item nav-link active" href="report.html">Reportar crime</a>
     			</div>
   			</div>
 		</nav>
 		<!-- Fim da navbar -->
 		
-		<!-- Começo do formulário -->
-		<form>
+		<!-- ComeÃ§o do formulÃ¡rio -->
+		<form action="${pageContext.request.contextPath}/report.do" method="post">
 			<h1></h1>
 			<div class="container">
 				<div class="card">
 	  				<div class="card-body">
-	  					<h2>Informações do crime:</h2>
+	  					<h2>InformaÃ§Ãµes do crime:</h2>
 	  					<div class="form-row">
 	  						<div class="form-group col-md-4">
 	  							<label for="inputTipo">Tipo</label>
