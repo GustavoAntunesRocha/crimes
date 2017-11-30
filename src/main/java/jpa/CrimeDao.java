@@ -12,7 +12,7 @@ import javax.persistence.TypedQuery;
  */
 public class CrimeDao {
 
-	//"professores" é o nome da unidade de persistência no "persistence.xml".
+	//"crimes" é o nome da unidade de persistência no "persistence.xml".
 	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("crimes");
 
 	public static void inclui(String tipo, String arma, String descricao) {

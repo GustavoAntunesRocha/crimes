@@ -4,7 +4,7 @@
 <html>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<head>
-		<meta charset="ISO-8859-1">
+		<meta charset="UTF-8">
 		<title>Insert title here</title>
 	</head>
 	<body>
@@ -24,8 +24,7 @@
 		<!-- Fim da navbar -->
 		
 		<!-- Começo do formulário -->
-		<form action="${pageContext.request.contextPath}/report.do" method="post">
-			<h1></h1>
+		<form action="CrimeController?action=incluir" role="form" method="POST">
 			<div class="container">
 				<div class="card">
 	  				<div class="card-body">
@@ -33,7 +32,7 @@
 	  					<div class="form-row">
 	  						<div class="form-group col-md-4">
 	  							<label for="inputTipo">Tipo</label>
-	  							<select id="inputTipo" class="form-control" required>
+	  							<select name="inputTipo" id="inputTipo" class="form-control" required>
 	  								<option>Assalto</option>
 	  								<option>Assassinato</option>
 	  								<option>Furto</option>
@@ -42,7 +41,7 @@
 	  						</div>
 	  						<div class="form-group col-md-2">
 	  							<label for="inputArma">Arma</label>
-	  							<select id="inputArma" class="form-control" required>
+	  							<select name="inputArma" id="inputArma" class="form-control" required>
 	  								<option>Nenhuma</option>
 	  								<option>Branca</option>
 	  								<option>Fogo</option>
@@ -51,19 +50,12 @@
 	  					</div>
 	  					<div class="form-group">
     						<label for="inputDesc">Descreva o delito:</label>
-    						<textarea class="form-control" id="inputDesc" rows="3"></textarea>
+    						<textarea class="form-control" name="inputDesc" id="inputDesc" rows="3"></textarea>
   						</div>
-  						<h6>Se quiser pode fazer um upload de uma foto ou video do ocorrido</h6>
-  						<h6>Clique abaixo para selecionar o arquivo:</h6>
-  						<label class="custom-file">
-  							<input type="file" id="file2" class="custom-file-input">
-  							<span class="custom-file-control"></span>
-						</label>
-	  					<div id="map"></div>
-	  				</div>
+  	  				</div>
 	  			</div>
 	  			<h1></h1>
-	  			<button name="operacao" value="incluir" class="btn btn-primary">Enviar</button>
+	  			<button type="submit" class="btn btn-default">Enviar</button>
 	  		</div>
 		</form>
 		<script async defer
